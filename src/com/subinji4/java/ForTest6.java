@@ -46,7 +46,7 @@ public class ForTest6 {
 //			}
 //		}
 		
-		int corNum = 0;
+		int corNum = 0; // 0은 실패  1은 성공
 		
 		for(int i=0;i<5;i++) {
 			System.out.println("아이디를 입력해주세요.");
