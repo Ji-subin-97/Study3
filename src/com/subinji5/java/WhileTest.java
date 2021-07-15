@@ -6,6 +6,7 @@ public class WhileTest {
 
 	public static void main(String[] args) {
 		System.out.println("WhileTest1 Start");
+		int str[] = {1,2,3,4,5};
 		// 0-4까지 출력
 		for(int i=0;i<5;i++) {
 			System.out.println(i);
