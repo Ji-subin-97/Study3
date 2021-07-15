@@ -14,7 +14,7 @@ public class Array_4 {
 			ar2[i] =ar1[i];
 		}
 		
-		ar2[ar1.length] = 4;
+		ar2[ar1.length] = ar2.length;
 		ar1 = ar2;
 
 		
