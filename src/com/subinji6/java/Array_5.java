@@ -34,10 +34,20 @@ public class Array_5 {
 				}
 			}
 			else if(select==2) {
+				
 				System.out.println("숫자 정보를 입력해주세요.");
 				int info_item = sc.nextInt();
 				if(info[info.length-1]!=0) {
-					System.out.println("정보가 이미 " + info.length + " 만큼 가득차있습니다. 정보를 삭제해주세요.");
+					System.out.println("총 정보량 :" + info.length);
+					
+					int [] ar2 = new int[info.length+1];
+					for(int i=0;i<info.length;i++) {
+						ar2[i]=info[i];
+						
+					}
+					ar2[info.length] = info_item;
+					
+					info = ar2;
 					continue;
 				}
 				for(int i=0;i<info.length;i++) {
