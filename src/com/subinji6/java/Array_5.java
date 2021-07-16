@@ -20,8 +20,8 @@ public class Array_5 {
 		
 		
 		while(flag) {
-			System.out.println("원하시는 작업을 선택해주세요. (최대 정보 5개)");
-			System.out.println("1. 정보 출력\n2. 정보 추가\n3. 정보 삭제\n4. 종 료");
+			System.out.println("원하시는 작업을 선택해주세요. (최대 정보 "+ info.length +"개)");
+			System.out.println("1. 정보 출력\n2. 정보 추가\n3. 정보 삭제\n4. 검색해서 삭제\n5. 종 료");
 			
 			int select = sc.nextInt();
 			
@@ -59,11 +59,21 @@ public class Array_5 {
 				}else {
 					continue;
 				}
-			}else {
+			}
+			else if(select==4) {
+				System.out.println("삭제할 데이터의 순번을 입력해주세요.");
+				int selectIndex = sc.nextInt();
+				for(int i=selectIndex-1;i<info.length-1;i++) {
+					info[i]=info[i+1];
+				}
+				info[info.length-1] = 0;	
+			}
+			else {
 				flag = false;
 			}
 		}
 		
+		sc.close();
 		System.out.println("시스템을 종료합니다.");
 
 	}
