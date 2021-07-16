@@ -35,7 +35,7 @@ public class Array_8 {
 				
 				for(int i=0; i<ids.length;i++) {
 					if(myId==ids[i]) {
-						if(myPw==pws[i] && pws[i]==ids[i]) {
+						if(myPw==pws[i]) {
 						for(int j=0; j<pws.length;j++) {
 								System.out.println("로그인에 성공하셨습니다. 메인화면으로 돌아갑니다.");
 								break;
@@ -61,8 +61,7 @@ public class Array_8 {
 				int [] pwAr = new int[pws.length+1];
 				
 				for(int i=0;i<ids.length;i++) {
-					for(int p=0;p<pws.length;p++) {
-						if(newId != ids[i] && newPw != pws[i]) {
+						if(newId != ids[i]) {
 							for(int j=0;j<ids.length;j++) {
 								idAr[j] = ids[j];
 							}
@@ -78,8 +77,6 @@ public class Array_8 {
 							System.out.println("이미 존재하는 아이디입니다.");
 							break;
 						}
-					}
-					break;
 				}
 			}else
 				flag = false;	// 종료버튼누름	
